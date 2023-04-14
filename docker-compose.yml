@@ -1,0 +1,8 @@
+services:
+  rabbitmq:
+    image: rabbitmq:3.8-management
+    container_name: rabbitmq
+    ports:
+      - "61613:61613"
+      - "15672:15672"
+      - "5672:5672"
