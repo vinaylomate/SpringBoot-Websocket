@@ -45,6 +45,7 @@ function sendPrivateMessage() {
       {'authKey': apiKey },
       JSON.stringify({'message': message})
     );
+    showMessage(message);
 }
 
 function showMessage(message) {

@@ -21,12 +21,12 @@ public class WebsocketController {
 
     private final WebsocketService websocketService;
 
-//    @MessageMapping("/message")
-//    @SendTo("topic/in")
-//    private String sendMessage(@RequestBody String message) {
-//        log.info("Received : "+message);
-//        return message;
-//    }
+    @MessageMapping("/message")
+    @SendTo("topic/in")
+    private String sendMessage(@RequestBody String message) {
+        log.info("Received : "+message);
+        return message;
+    }
 
     @MessageMapping("/messages.{user}")
     private Boolean sendMessageToUser(Principal principal, @Header String authKey, @DestinationVariable String user, @RequestBody WebsocketMessage message) {

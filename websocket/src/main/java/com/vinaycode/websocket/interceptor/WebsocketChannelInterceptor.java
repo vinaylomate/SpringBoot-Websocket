@@ -23,9 +23,6 @@ public class WebsocketChannelInterceptor implements ChannelInterceptor {
     static final String SESSION_KEY_HEADER = "simpSessionId";
     static final String WS_ID_HEADER = "ws-id";
 
-    /**
-     * Processes a message before sending it
-     */
     @Override
     public Message<?> preSend(Message<?> message, MessageChannel channel) {
         final StompHeaderAccessor accessor = readHeaderAccessor(message);

@@ -17,6 +17,7 @@
     <modules>
         <module>websocket</module>
 		<module>eureka-server</module>
+		<module>apigw</module>
 	</modules>
     <properties>
 		<java.version>1.8</java.version>
