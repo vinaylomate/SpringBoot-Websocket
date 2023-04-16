@@ -1,6 +1,6 @@
 services:
   rabbitmq:
-    image: rabbitmq:3.8-management
+    image: pcloud/rabbitmq-stomp
     container_name: rabbitmq
     ports:
       - "61613:61613"
